@@ -1,15 +1,149 @@
 
 
+## HomeWork is broken down into:
+
+1) A summary of tasks done to setup custom testnet blockchain with some screenshots.
+2) Sending transaction.
+3) Instructions to use the chain for rest of the team.
+
+
+
+#### 1. Summary of tasks done to setup custom testnet Blockchain
+
+* We use the geth commands "./geth --datadir node1 account new" to create 2 new acccounts node1 and node2.
+* We generated the Genesis block using Puppeth. We called the Network - chuckpoa and we used Proof of Authority consensus algorith. 
+* We sealed the 2 accounts 
+* We pre-funded them both. 
+* We exported the genesis configurations.
+* We then initialized the nodes with the genesis json files. 
+* Then we ran both nodes in 2 separate terminals 
+* These steps got the private PoA blockchain running!
+
+
+
+Below are some screenshots:
+
+Folder structure showing the Node1 and Node2 and also a new wallet with 0 balance was created.
+
+![image-20210820110301824](images1/image-20210820110301824.png)
 
 
 
 
-Instructions on how to use the chain for the rest of your team.
 
-- We need to start the node from the directory where we created the Blockchain. See screenshot below.
-- instructions to start up the 2 nodes.
+Starting Node 1 - 
+
+./geth --datadir node1 --unlock "55E0533c0b74ACAdbD8c8A907b91CDB864800182" --mine --rpc --allow-insecure-unlock
+
+![image-20210820111327169](images1/image-20210820111327169.png)
 
 
+
+
+
+Starting Node 2 - 
+
+./geth --datadir node2 --unlock "c86f20F59759C7A5B99f0be1b97be0A1906436D5" --mine --port 30304 --bootnodes "enode://165c2740605bcabdc867235640f13df4d975dc9fc388668cf1e726758a7dcc4e4d171666c1a4f14ec722a11fc2f894762bf1f42573894d17fb72bf013274ada8@127.0.0.1:30303" --ipcdisable --allow-insecure-unlock
+
+![image-20210820111240138](images1/image-20210820111240138.png)
+
+
+
+
+
+
+
+
+
+2. #### Sending transaction
+
+We used MyCrypto as a wallet. 
+
+MyCrypto is an **Ethereum focused web wallet** that allows Ledger users to store their Ethers as well as all ERC20 tokens. An open-source web-based wallet application, MyCrypto lets you manage the plethora of Ethereum-based tokens all while keeping your private keys offline.
+
+A New wallet was created with balance 0. We created it with Keystore method. (see screenshot of  folder structure where we also stored  the newwallet too). We  will use the wallet address of this new wallet to send a  transaction from Node1.
+
+![image-20210820110144424](images1/image-20210820110144424.png)
+
+
+
+
+
+Next we also created a Custom Node with URL http://127.0.0.1:8545 to connect to the private blockchain we were running. 
+
+Using the Keystore file of Node 1 we connected to the Node 1  wallet below which already has funds.
+
+![image-20210820110357219](images1/image-20210820110357219.png)
+
+
+
+
+
+Now send 1 ETH from Node 1 to New wallet created.
+
+![image-20210820110540705](images1/image-20210820110540705.png)
+
+
+
+
+
+
+
+![image-20210820110719876](images1/image-20210820110719876.png)
+
+
+
+
+
+
+
+
+
+![image-20210820110731706](images1/image-20210820110731706.png)
+
+
+
+
+
+![image-20210820110805294](images1/image-20210820110805294.png)
+
+
+
+
+
+
+
+Now New wallet has the 1 ETH balance.
+
+![image-20210820110935755](images1/image-20210820110935755.png)
+
+
+
+
+
+3. #### Instructions on how to use the chain for the rest of your team.
+
+- We need to start the 2 nodes from the directory where we created the Blockchain. See screenshots provided before. This will get the Blockchain up and running.
+
+- The folder under Node 1 and node 2 has the keystore files under the nodes Keystore folder. We will need these to be picked with MyCrypro later to  send any transactions from these wallets  to  any otther address. (screenshots from step 2 illustrate that)
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Some personal notes to understand concepts and commands:
 
 ```
 MINER OPTIONS:
@@ -75,98 +209,6 @@ Geth 1.6 ships a new tool called `puppeth`, which aims to solve this particular 
 Puppeth is not a magic bullet. If you have large in-house Ethereum deployments based on your own orchestration tools, it’s always better to use existing infrastructure. However, if you need to create your own Ethereum network without the fuss, Puppeth might actually help you do that… fast. Everything is deployed into containers, so it will not litter your system with weird packages. That said, it’s Puppeth’s first release, so tread with caution and try not to deploy onto critical systems.
 
 Reference - https://blog.ethereum.org/2017/04/14/geth-1-6-puppeth-master/
-
-
-
-![image-20210820110301824](images1/image-20210820110301824.png)
-
-
-
-
-
-Starting Node 1 - 
-
-![image-20210820111327169](images1/image-20210820111327169.png)
-
-
-
-
-
-Starting Node 2 - 
-
-![image-20210820111240138](images1/image-20210820111240138.png)
-
-
-
-
-
-
-
-
-
-
-
-New wallet created - had balance 0.
-
-
-
-![image-20210820110144424](images1/image-20210820110144424.png)
-
-
-
-
-
-Node 1 wallet below: 
-
-![image-20210820110357219](images1/image-20210820110357219.png)
-
-
-
-
-
-Now send 1 ETH from Node 1 to New wallet created.
-
-![image-20210820110540705](images1/image-20210820110540705.png)
-
-
-
-
-
-
-
-![image-20210820110719876](images1/image-20210820110719876.png)
-
-
-
-
-
-
-
-
-
-![image-20210820110731706](images1/image-20210820110731706.png)
-
-
-
-
-
-![image-20210820110805294](images1/image-20210820110805294.png)
-
-
-
-
-
-
-
-Now New wallet has the 1 ETH balance.
-
-![image-20210820110935755](images1/image-20210820110935755.png)
-
-
-
-
-
-
 
 
 
