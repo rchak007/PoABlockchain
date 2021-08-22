@@ -78,7 +78,7 @@ Reference - https://blog.ethereum.org/2017/04/14/geth-1-6-puppeth-master/
 
 
 
-![image-20210820110301824](C:\Users\chakravartiraghavan\AppData\Roaming\Typora\typora-user-images\image-20210820110301824.png)
+![image-20210820110301824](images1/image-20210820110301824.png)
 
 
 
@@ -86,7 +86,7 @@ Reference - https://blog.ethereum.org/2017/04/14/geth-1-6-puppeth-master/
 
 Starting Node 1 - 
 
-![image-20210820111327169](C:\Users\chakravartiraghavan\AppData\Roaming\Typora\typora-user-images\image-20210820111327169.png)
+![image-20210820111327169](images1/image-20210820111327169.png)
 
 
 
@@ -94,7 +94,7 @@ Starting Node 1 -
 
 Starting Node 2 - 
 
-![image-20210820111240138](C:\Users\chakravartiraghavan\AppData\Roaming\Typora\typora-user-images\image-20210820111240138.png)
+![image-20210820111240138](images1/image-20210820111240138.png)
 
 
 
@@ -110,7 +110,7 @@ New wallet created - had balance 0.
 
 
 
-![image-20210820110144424](C:\Users\chakravartiraghavan\AppData\Roaming\Typora\typora-user-images\image-20210820110144424.png)
+![image-20210820110144424](images1/image-20210820110144424.png)
 
 
 
@@ -118,7 +118,7 @@ New wallet created - had balance 0.
 
 Node 1 wallet below: 
 
-![image-20210820110357219](C:\Users\chakravartiraghavan\AppData\Roaming\Typora\typora-user-images\image-20210820110357219.png)
+![image-20210820110357219](images1/image-20210820110357219.png)
 
 
 
@@ -126,7 +126,7 @@ Node 1 wallet below:
 
 Now send 1 ETH from Node 1 to New wallet created.
 
-![image-20210820110540705](C:\Users\chakravartiraghavan\AppData\Roaming\Typora\typora-user-images\image-20210820110540705.png)
+![image-20210820110540705](images1/image-20210820110540705.png)
 
 
 
@@ -134,7 +134,7 @@ Now send 1 ETH from Node 1 to New wallet created.
 
 
 
-![image-20210820110719876](C:\Users\chakravartiraghavan\AppData\Roaming\Typora\typora-user-images\image-20210820110719876.png)
+![image-20210820110719876](images1/image-20210820110719876.png)
 
 
 
@@ -144,13 +144,13 @@ Now send 1 ETH from Node 1 to New wallet created.
 
 
 
-![image-20210820110731706](C:\Users\chakravartiraghavan\AppData\Roaming\Typora\typora-user-images\image-20210820110731706.png)
+![image-20210820110731706](images1/image-20210820110731706.png)
 
 
 
 
 
-![image-20210820110805294](C:\Users\chakravartiraghavan\AppData\Roaming\Typora\typora-user-images\image-20210820110805294.png)
+![image-20210820110805294](images1/image-20210820110805294.png)
 
 
 
@@ -160,7 +160,7 @@ Now send 1 ETH from Node 1 to New wallet created.
 
 Now New wallet has the 1 ETH balance.
 
-![image-20210820110935755](C:\Users\chakravartiraghavan\AppData\Roaming\Typora\typora-user-images\image-20210820110935755.png)
+![image-20210820110935755](images1/image-20210820110935755.png)
 
 
 
